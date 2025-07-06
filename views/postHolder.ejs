@@ -1,0 +1,6 @@
+        <% for(let i = 0; i < posts.length; i++){ %>
+            <div class = "postBox" id = "<%= identifier[i] %>">
+                <h2> <%- subTitle[i] %> </h3><br>
+                <p class = "postText"><%- posts[i] %> </p>
+            </div>
+        <% } %>

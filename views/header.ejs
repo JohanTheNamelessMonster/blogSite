@@ -1,0 +1,15 @@
+<div class = "fixed">
+    <div class="header">
+        <h1 id = "titularText"><a class="home" href="/">Johan's Blog</a></h1>
+    </div>
+
+    <div id = "navbar">
+
+        <% for(let i = 0; i< subroutes.length;i++){ %>
+
+            <div class="subroutes"><a href="<%= links[i] %>"><%= subroutes[i] %></a></div>
+
+        <% } %>
+
+    </div>
+</div>

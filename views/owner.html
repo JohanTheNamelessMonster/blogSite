@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFortner-Owner</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 1%;;
+        }
+    </style>
+</head>
+<body style="position: relative;">
+    <form>
+        <input type="text" id="title" placeholder="Title" style="height: 50px; width: 49%; float: left;">
+        <input type="text" id="page" placeholder="Page" style="height: 50px;width: 49%; float: right;">
+        <input type="text" id="bodyText" placeholder="Body" style="height: 100px; width: 100%;">
+        <input type="password" id="accessKey" placeholder="Password" style="height: 50px; width: 49%;">
+        <input type="text" id="identifier" placeholder="Post ID" style="height: 50px; width: 49%;">
+        <label for="Insert">Insert</label>
+        <input id="Insert" type="radio" value="Insert" name = "postAction">
+        <label for="Update">Update</label>
+        <input id="idShow" type="radio" value="Update" name = "postAction">
+        <label for="Delete">Delete</label>
+        <input id="idShow" type="radio" value="Delete" name = "postAction"><br>
+        <button style="position:absolute; height: 100px;width: 100px;background-color: aqua;border-radius: 10%;" onmouseover="javascript:document.querySelector('button').style.backgroundColor = 'aquamarine' " onmouseout="javascript:document.querySelector('button').style.backgroundColor = 'aqua' "  type="submit">Post!!!</button>
+    </form>
+    <script type="module" src="/postMaker.js"></script>
+</body>
+</html>

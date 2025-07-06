@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johan Fortner | <%- title %></title>
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <%- include('scripts.ejs') %>
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left' },
+            svg : {displayAlign: 'left'}
+        };
+    </script>
+</head>
+<body>
+
+        <%- include('header.ejs') %> 
+        <%- include('postHolder.ejs') %>
+
+
+        <script src="/index.js"></script>
+
+</body>
+</html>
