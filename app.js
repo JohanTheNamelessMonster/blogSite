@@ -28,6 +28,9 @@ async function getData(URL) {
 
 app.get('/',async (req,res)=>{
 
+
+    console.log(req.socket.remoteAddress)
+
     let dataGiven = []
     dataGiven = await getData(process.env.DATA+"/home/")
 
